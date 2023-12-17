@@ -13,6 +13,24 @@ header{
     width: 100%;
     height: 70px;
     background-color: aliceblue;
+    display: flex;
+}
+
+.logo{
+    width: 20%;
+    height: 100%;
+    background-color: aliceblue;
+}
+
+.noneBox{
+    width: 30%;
+    height: 100%;
+    background-color: black;
+}
+
+nav{
+    width: 50%;
+    height: 100%;
 }
 
 .imgSlide{
