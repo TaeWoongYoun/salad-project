@@ -24,6 +24,8 @@ ul li{
 main{
     width: 100%;
     height: 800px;
+    overflow-y: hidden;
+
 }
 
 header{
@@ -34,21 +36,22 @@ header{
 }
 
 .logo{
-    width: 15%;
+    width: 200px;
     height: 100%;
-    font-family: 'EB Garamond', serif;
-    font-size: 56px;
+    margin-left: 20px;
+    font-size: 40px;
     text-align: center;
-    line-height: 70PX;
+    line-height: 60PX;
+    font-family: 'Kalnia', serif;
 }
 
 .noneBox{
-    width: 30%;
+    width: 400px;
     height: 100%;
 }
 
 nav{
-    width: 50%;
+    width: 840px;
     height: 100%;
 }
 
@@ -95,9 +98,53 @@ nav{
 
 
 .imgSlide{
-    width: 100%;
-    height: 700px;
-    background-color: aquamarine;
+    width: 1400px;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+}
+
+.window{
+    width: 4200px;
+    height: 300px;
+    position: absolute;
+    animation: 6s infinite linear window;
+    display: flex;
+}
+
+.window li{
+    width: 1400px;
+    height: 300px;
+}
+
+@keyframes window{
+    0%{
+        left: 0px;
+    }
+
+    23%{
+        left: 0%;
+    }
+
+    33%{
+        left: -1400px;
+    }
+
+    56%{
+        left: -1400px;
+    }
+
+    66%{
+        left: -2800px;
+    }
+
+    90%{
+        left: -2800px;
+    }
+
+    100%{
+        left: -4200px;
+    }
 }
 
 .content{
@@ -108,6 +155,6 @@ nav{
 
 footer{
     width: 100%;
-    height: 130px;
+    height: 70px;
     background-color: gray;
 }
